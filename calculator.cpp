@@ -19,3 +19,18 @@ int Calculator::Mul (double a, double b)
 {
     return a * b + 0.5;
 }
+
+int Calculator::Div (double a, double b)
+{
+	return a / b;
+}
+
+int Calculator::Power (double a, double b)
+{
+	int result = 1;
+	for (int i = 0; i < b; i++) 
+	{
+		result *= a;
+	} 
+	return result;
+}
